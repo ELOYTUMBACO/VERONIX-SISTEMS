@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Govern</title>
+  <meta name="description" content="Let's Govern es un juego estratégico que combina economía y política. Disponible para Android, iOS y PC. ¡Descárgalo gratis!">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000000; /* fondo negro elegante */
+      color: #f5f5f5;
+      text-align: center;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 80px 20px 60px 20px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #d0d0d0;
+    }
+
+    /* Botones sofisticados */
+    .btn {
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      color: #ffffff;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin: 15px;
+      transition: all 0.4s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: linear-gradient(135deg, #00bfff, #1e90ff);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    section h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #ffffff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    ul li {
+      margin: 15px 0;
+      padding: 18px 25px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      text-align: left;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    ul li:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .reseñas .card, .faq .pregunta {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 15px;
+      text-align: left;
+      transition: all 0.4s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    .reseñas .card:hover, .faq .pregunta:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    .faq .pregunta strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado sin logo -->
+  <header>
+    <h1>LET'S GOVERN!</h1>
+    <p>El juego que te permite balancear economía, poder y estrategia de manera divertida y desafiante. Pon a prueba tu ingenio y gobierna como un verdadero estratega.</p>
+  </header>
+
+  <!-- Beneficios -->
+  <section class="beneficios">
+    <h2>Beneficios del Juego</h2>
+    <ul>
+      <li>Aprende sobre economía y política mientras juegas.</li>
+      <li>Desarrolla tus habilidades estratégicas.</li>
+      <li>Toma decisiones que impactan en un mundo virtual.</li>
+      <li>Compite con amigos y jugadores de todo el mundo.</li>
+    </ul>
+  </section>
+
+  <!-- Plataformas -->
+  <section class="plataformas">
+    <h2>Descárgalo en tu plataforma favorita</h2>
+    <a href="#" class="btn">Android</a>
+    <a href="#" class="btn">iOS</a>
+    <a href="#" class="btn">PC</a>
+  </section>
+
+  <!-- Reseñas -->
+  <section class="reseñas">
+    <h2>Lo que dicen los jugadores</h2>
+    <div class="card">
+      "Un juego increíble, combina diversión y aprendizaje de forma única." <br>— Carlos M.
+    </div>
+    <div class="card">
+      "Muy entretenido, me encanta competir con mis amigos." <br>— Ana R.
+    </div>
+    <div class="card">
+      "Nunca pensé que aprender sobre política y economía sería tan divertido." <br>— Javier L.
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section class="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="pregunta">
+      <strong>¿Es gratis jugar Let's Govern?</strong>
+      Sí, el juego es gratuito con opciones de contenido adicional premium.
+    </div>
+    <div class="pregunta">
+      <strong>¿En qué plataformas está disponible?</strong>
+      Está disponible para Android, iOS y PC.
+    </div>
+    <div class="pregunta">
+      <strong>¿Necesito conexión a internet?</strong>
+      Puedes jugar offline en el modo historia, pero necesitarás internet para competir online.
+    </div>
+    <div class="pregunta">
+      <strong>¿El juego tiene multijugador?</strong>
+      Sí, puedes jugar con tus amigos y participar en torneos globales.
+    </div>
+  </section>
+
+</body>
+</html>
